@@ -86,19 +86,19 @@ void loop()
 					r = r + 2;
 			}
 
-			// für alle Spalten
-			for (int c = 0; c < spalten_anzahl; c++)
-			{
-				// Spalte ausschalten
-				int r = 0;
-				digitalWrite(spalte[1 + r], LOW);
-				r = r + 2;
-			}
+			//// für alle Spalten
+			//for (int c = 0; c < spalten_anzahl; c++)
+			//{
+			//	// Spalte ausschalten
+			//	int r = 0;
+			//	digitalWrite(spalte[1 + r], LOW);
+			//	r = r + 2;
+			//}
 
-			// alle Zeilen der Spalte ausschalten
-			c = 0;
-			digitalWrite(zeile[1 + c], LOW);
-			c++;
+			//// alle Zeilen der Spalte ausschalten
+			//c = 0;
+			//digitalWrite(zeile[1 + c], LOW);
+			//c++;
 		}
 	}
 }
