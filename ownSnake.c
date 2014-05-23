@@ -85,7 +85,7 @@ void loop()
 					digitalWrite(spalte[1+r], LOW);
 					r = r + 2;
 			}
-
+			_delay_ms(5000);
 			//// für alle Spalten
 			//for (int c = 0; c < spalten_anzahl; c++)
 			//{
