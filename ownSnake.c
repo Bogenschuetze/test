@@ -38,9 +38,22 @@ volatile uint8_t zeile[10] = { 15, 1, 2, 3, 4, 5, 6, 7, PA3, PA4 };//Displayzeil
 int main (void)
 { 
 	setup();
+	int x = 0;
+	int y = 0;
 	while (1)
 	{
-		set_pixel(10,5);
+		for (x=0;x<10;x++)		//Spalten
+		{
+			set_pixel(x,y);
+			x = x + 2;
+			for (x=0;x<10;x++)  //Zeilen
+			{
+				set_pixel(x,y);
+				y++;
+			}
+		}
+	_delay_ms(5000);
+		
 	}
 }
 
