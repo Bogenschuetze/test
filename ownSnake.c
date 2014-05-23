@@ -40,8 +40,7 @@ int main (void)
 	setup();
 	int x = 0;
 	int y = 0;
-	while (1)
-	{
+
 		for (x=0;x<10;x++)		//Spalten
 		{
 			set_pixel(x,y);
@@ -54,6 +53,8 @@ int main (void)
 		}
 	_delay_ms(5000);
 		
+	while (1)
+	{
 	}
 }
 
